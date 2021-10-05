@@ -1,6 +1,11 @@
 <template>
     <div class="text-center">
-        <h2 class="text-3xl font-bold">{{text}}</h2>
+        <div v-if="text == 'United States of America'">
+            <h2  class="text-3xl font-bold text-blue-500"><a href="https://echostarsoftware.com/covid-tracker/usa">{{text}}</a></h2>
+        </div>
+        <div v-else>
+            <h2 class="text-3xl font-bold">{{text}}</h2>
+        </div>
         <div class="text-2xl mt-4 mb-10">
             updated: {{timestamp}}
         </div>
