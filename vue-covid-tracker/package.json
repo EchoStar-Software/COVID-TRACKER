@@ -1,10 +1,11 @@
 {
-  "name": "vue-covid-tracker",
+  "name": "VUE-COVID-TRACKER",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.0.2",
