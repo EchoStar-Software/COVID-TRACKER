@@ -1,7 +1,9 @@
 <template>
     <div class="text-center">
         <div v-if="text == 'United States of America'">
-            <h2  class="text-3xl font-bold text-blue-500"><a href="https://echostarsoftware.com/covid-tracker/usa">{{text}}</a></h2>
+            <router-link to="/usa">
+            <h2  class="text-3xl font-bold text-blue-500">{{text}}</h2>
+            </router-link>
         </div>
         <div v-else>
             <h2 class="text-3xl font-bold">{{text}}</h2>
