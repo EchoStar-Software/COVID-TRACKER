@@ -18,9 +18,14 @@ export default {
     },
     methods: {
         onChange() {
-            const state = this.states.find((item) => item.locationId === this.selected)
-            this.$emit('get-state', state)
-            console.log('selected: ' + state.locationId)
+            if(this.selected != 0) {
+                const state = this.states.find((item) => item.locationId === this.selected)
+                this.$emit('get-state', state)
+                console.log('selected: ' + state.locationId)
+            }
+            else {
+                this.$emit('get-state', 0)
+            }
         }
     }
 }

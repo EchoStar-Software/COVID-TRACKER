@@ -53,8 +53,13 @@ export default {
         return data
     },
     getStateData(state) {
+      if(state != 0) {
         this.stats = state
         this.title = state.state
+      } else
+      {
+        this.clearStateData()
+      }
     },
     async clearStateData(){
         this.loading = true

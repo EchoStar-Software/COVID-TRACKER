@@ -49,8 +49,13 @@ export default {
       return data
     },
     getCountryData(country) {
-      this.stats = country
-      this.title = country.Country
+      if(country != 0){ 
+        this.stats = country
+        this.title = country.Country
+      } else {
+        this.clearCountryData()
+      }
+
     },
     async clearCountryData(){
       this.loading = true
