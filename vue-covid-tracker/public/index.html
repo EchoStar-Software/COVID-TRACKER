@@ -8,12 +8,59 @@
     <link rel="icon" href="<%= BASE_URL %>icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <title><%= htmlWebpackPlugin.options.title %></title>
+    
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
+
+    <header>
+      <!-- Center Navbar Logo -->
+      <!-- https://youtu.be/hK6dMdxt3hQ -->
+      <!-- NAV Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <!-- header icon and title -->
+          <a class="navbar-brand d-lg-none" href="/">
+            <img src="https://www.echostarsoftware.com/img/icon.png" alt="" width="50" height="50" class="d-inline-block align-text-center">
+            EchoStar Software
+          </a>
+          <!-- Menu navigation items -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mb-2 mb-lg-0 mx-auto">
+              <li class="nav-item">
+                <!-- <a class="nav-link active" aria-current="page" href="https://echostarsoftware.com/">Home</a> -->
+                <a class="navbar-brand" href="/">
+                  <img src="https://www.echostarsoftware.com/img/icon.png" alt="" width="50" height="50" class="d-inline-block align-text-center">
+                  EchoStar Software
+                </a>
+              </li>
+          </ul>
+          </li>
+        </ul>
+        </div>
+      </div>
+      </nav>
+    </header>
+
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
     <div id="app"></div>
+
+    <!-- Footer Content -->
+    <footer class="footer mt-auto bg-dark">
+      <div class="container">
+          <center>
+          <span class="text-muted"><br /> <p>&copy; <script>document.write(new Date().getFullYear())</script> - EchoStar Software
+          <br /> Designed with <a href="https://getbootstrap.com/">BootStrap</a> | Built on <a href="https://kit.svelte.dev/">Svelte Framework</a></p></span>
+          </center>
+      </div>
+      </footer>
     <!-- built files will be auto injected -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   </body>
 </html>
